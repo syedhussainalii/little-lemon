@@ -3,8 +3,8 @@ import BookingForm from "./BookingForm";
 
 const BookingPage = ({ availableTimes, dispatch, submitForm }) => {
   return (
-    <section className="card">
-      <h2>Reserve a Table</h2>
+    <section className="card" aria-labelledby="booking-page-title">
+      <h2 id="booking-page-title">Reserve a Table</h2>
       <BookingForm
         availableTimes={availableTimes}
         dispatch={dispatch}

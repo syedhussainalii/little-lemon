@@ -1,12 +1,31 @@
 import React from "react";
-import logo from "../assets/react.svg";
 
 const Header = () => {
   return (
-    <header>
-      <img src={logo} alt="Little Lemon Logo" />
-    </header>
-    
+    <>
+      <style>{`
+        .site-header {
+          background: var(--color-primary-dark);
+          padding: var(--space-xl) 0;
+        }
+
+        .site-header .container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .site-header h1 {
+          color: #fff;
+          margin: 0;
+        }
+      `}</style>
+      <header className="site-header" aria-labelledby="site-title">
+        <div className="container">
+          <h1 id="site-title">Little Lemon</h1>
+        </div>
+      </header>
+    </>
   );
 };
 

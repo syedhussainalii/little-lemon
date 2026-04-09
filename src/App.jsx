@@ -5,13 +5,12 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 
-
 function App() {
   return (
     <>
       <Header />
       <Navbar />
-      <div className="container">
+      <div className="container" role="presentation">
         <Main />
       </div>
       <Footer />
