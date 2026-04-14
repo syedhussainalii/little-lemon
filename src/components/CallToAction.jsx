@@ -11,8 +11,8 @@ const CallToAction = () => {
         .hero h1 { color: var(--color-accent); margin-bottom: var(--space-xs); }
         .hero h2 { color: #fff; font-size: 24px; margin-bottom: var(--space-md); }
         .hero p  { color: #B0C7BF; margin-bottom: var(--space-xl); }
-        .hero .btn { color: #B0C7BF; }
-        .hero .btn:hover { color: #fff; }
+        .hero .btn { color: var(--color-primary-dark); }
+        .hero .btn:hover { color: var(--color-primary-dark); }
         .hero-img { border-radius: var(--radius-xl); object-fit: cover; width: 100%; height: 380px; }
         @media (max-width: 768px) { .hero .container { grid-template-columns: 1fr; } .hero-img { display: none; } }
       `}</style>
