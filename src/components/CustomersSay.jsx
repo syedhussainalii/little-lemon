@@ -33,7 +33,9 @@ const CustomersSay = () => {
           <div className="testimonials-grid">
             {testimonials.map((testimonial) => (
               <article key={testimonial.name} className="testimonial-card">
-                <div className="testimonial-stars">★★★★★</div>
+                <div className="testimonial-stars" aria-label="5 out of 5 stars">
+                  *****
+                </div>
                 <p className="testimonial-text">{testimonial.text}</p>
                 <p className="testimonial-name">{testimonial.name}</p>
               </article>

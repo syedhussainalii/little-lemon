@@ -18,21 +18,24 @@ function Footer() {
           </div>
           <div>
             <h4>Navigation</h4>
-            <a href="/">Home</a>
-            <a href="#">About</a>
-            <a href="#">Menu</a>
+            <a href="/#home">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#menu">Menu</a>
+            <a href="/booking">Reservations</a>
           </div>
           <div>
             <h4>Contact</h4>
-            <a href="tel:+1234567890">(123) 456-7890</a>
+            <a href="tel:+13125550199">(312) 555-0199</a>
             <a href="mailto:hello@littlelemon.com">hello@littlelemon.com</a>
-            <a href="#">Chicago, Illinois</a>
+            <a href="https://maps.google.com/?q=Chicago,+Illinois" target="_blank" rel="noreferrer">
+              Chicago, Illinois
+            </a>
           </div>
           <div>
             <h4>Social</h4>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">X</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+            <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
           </div>
         </div>
         <div className="footer-bottom">

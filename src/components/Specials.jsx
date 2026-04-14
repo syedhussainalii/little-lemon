@@ -43,7 +43,7 @@ const Specials = () => {
         .dish-footer { display: flex; justify-content: space-between; align-items: center; margin-top: var(--space-md); }
         .dish-link { font-weight: 500; color: var(--color-primary-dark); text-decoration: none; }
       `}</style>
-      <section className="specials" aria-labelledby="specials-title">
+      <section id="menu" className="specials" aria-labelledby="specials-title">
         <div className="container">
           <div className="specials-header">
             <h2 id="specials-title">Specials</h2>
@@ -54,7 +54,13 @@ const Specials = () => {
           <div className="specials-grid">
             {dishes.map((dish) => (
               <article key={dish.title} className="card">
-                <img className="dish-img" src={dish.image} alt={dish.title} />
+                <img
+                  className="dish-img"
+                  src={dish.image}
+                  alt={dish.title}
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div className="dish-footer">
                   <h3>{dish.title}</h3>
                   <span>{dish.price}</span>

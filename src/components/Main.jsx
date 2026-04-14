@@ -3,19 +3,8 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import BookingPage from "./BookingPage";
 import Homepage from "./Homepage";
 import ConfirmedBooking from "./ConfirmedBooking";
-import { fetchAPI, submitAPI } from "../api";
-
-export const initializeTimes = () => {
-  const today = new Date();
-  return fetchAPI(today);
-};
-
-export const updateTimes = (state, action) => {
-  if (action.type === "UPDATE_TIMES") {
-    return fetchAPI(new Date(action.date));
-  }
-  return state;
-};
+import { submitAPI } from "../api";
+import { initializeTimes, updateTimes } from "./bookingTimes";
 
 function Main() {
   const navigate = useNavigate();
@@ -31,6 +20,8 @@ function Main() {
     if (success) {
       navigate("/confirmed");
     }
+
+    return success;
   };
 
   return (

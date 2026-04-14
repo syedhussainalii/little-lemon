@@ -6,6 +6,7 @@ const BookingPage = ({ availableTimes, dispatch, submitForm }) => {
     <section className="card" aria-labelledby="booking-page-title">
       <h2 id="booking-page-title">Reserve a Table</h2>
       <BookingForm
+        pageTitleId="booking-page-title"
         availableTimes={availableTimes}
         dispatch={dispatch}
         submitForm={submitForm}

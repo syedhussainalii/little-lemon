@@ -16,7 +16,7 @@ const CallToAction = () => {
         .hero-img { border-radius: var(--radius-xl); object-fit: cover; width: 100%; height: 380px; }
         @media (max-width: 768px) { .hero .container { grid-template-columns: 1fr; } .hero-img { display: none; } }
       `}</style>
-      <section className="hero" aria-labelledby="hero-title">
+      <section id="home" className="hero" aria-labelledby="hero-title">
         <div className="container">
           <div>
             <h1 id="hero-title">Little Lemon</h1>
@@ -26,7 +26,13 @@ const CallToAction = () => {
               Reserve a Table
             </Link>
           </div>
-          <img className="hero-img" src={little} alt="Little Lemon hero" />
+          <img
+            className="hero-img"
+            src={little}
+            alt="Little Lemon hero"
+            fetchpriority="high"
+            decoding="async"
+          />
         </div>
       </section>
     </>
